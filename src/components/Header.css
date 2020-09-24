@@ -1,0 +1,26 @@
+.header{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 8em;
+    position: fixed;
+    background-color: #282c34;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.item{
+    flex-grow: 1;
+    margin:0;
+    padding: 1em;
+    color: lightyellow;
+    display: block;
+    text-align: center;
+}
+
+
+.item:hover{
+    cursor: pointer;
+    background-color: slategray;
+}
