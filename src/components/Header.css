@@ -2,19 +2,27 @@
     padding: 0;
     margin: 0;
     height: 100%;
-    width: 8em;
+    width: 10rem;
     position: fixed;
-    background-color: #282c34;
+    background-color: #1d1f1e;
     display: flex;
     flex-flow: column;
-
+    justify-items: center;
+    align-items: center;
 }
 
+.logo{
+    padding: 1em;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 80px;
+}
 .item{
     flex-grow: 1;
     margin:0;
-    padding: 1em;
-    color: lightyellow;
+    padding: 1em 0 1em 0;
+    width: 10rem;
+    color: white;
     display: block;
     text-align: center;
 }
