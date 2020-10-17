@@ -1,34 +1,10 @@
 .header{
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 10rem;
-    position: fixed;
-    background-color: #1d1f1e;
-    display: flex;
-    flex-flow: column;
-    justify-items: center;
-    align-items: center;
-}
-
-.logo{
-    padding: 1em;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 80px;
-}
-.item{
-    flex-grow: 1;
-    margin:0;
-    padding: 1em 0 1em 0;
-    width: 10rem;
-    color: white;
-    display: block;
+    margin: 20px 50px 0px 50px;
+    width: auto;
     text-align: center;
+    grid-column: 1/-1;
+    
 }
-
-
-.item:hover{
-    cursor: pointer;
-    background-color: slategray;
+h1{
+    color:rgb(22, 45, 70);
 }

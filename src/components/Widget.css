@@ -1,0 +1,18 @@
+.flex{
+    display:flex;
+    flex-flow:column;
+    justify-content: flex-start;
+    width: 30em;
+    height: 24em;
+    border:solid 2px #0074D5;
+    border-radius: 50px;
+    background:#F1F1F1;
+    margin: 0em 3.5em;
+    color: rgb(27, 41, 56);
+}
+
+.titulo{
+    align-self: start;
+    padding: 1em 3em;
+    margin: 0%;
+}

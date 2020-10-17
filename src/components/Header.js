@@ -1,21 +1,13 @@
 import React from 'react';
-import './Header.css'
-import logo from './LOGO.JPG'
+import './Header.css';
 
 const Header = () =>{
     return(
-        <nav className = 'header'>
-                <img src={logo} className='logo'/>
-                <p className = 'item' >Inicio</p>
-                <p className = 'item' >Tareas</p>
-                <p className = 'item' >Inventario</p>
-                <p className = 'item' >Deudores</p>
-                <p className = 'item' >Lotes</p>
-                <p className = 'item' >Proveedores</p>
-                <p className = 'item' >Facturas</p>
-                <p className = 'item' >Perfil</p>
-                <p className = 'item ' >Cerrar sesion</p>
-        </nav>
+        <div className='header'>
+            <h1>Bienvenido Eduardo</h1>
+            <h3>Tasa de cambio de dolar: 445.000bs</h3>
+        </div>
     )
 }
-export default Header
+
+export default Header;

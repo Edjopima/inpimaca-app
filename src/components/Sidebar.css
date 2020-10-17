@@ -1,0 +1,43 @@
+.sidebar{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 10rem;
+    position: relative;
+    background-color: rgb(21, 32, 43);
+    display: flex;
+    flex-flow: column;
+    justify-items: flex-start;
+    align-items: flex-start;
+    grid-row: 1/-1;
+}
+
+.logo{
+    padding: 1em;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 80px;
+    align-self: center;
+}
+.item{
+    flex-grow: 1;
+    margin:0;
+    padding: 1em;
+    color: white;
+    display: block;
+    text-align: start;
+    font-size: 1.1em;
+}
+
+.selected{
+    color:#7eaace;
+}
+
+
+.item:hover{
+    cursor: pointer;
+    background-color: #7eaace;
+    color:#0074D5 ;
+    border-radius: 5em;
+
+}
