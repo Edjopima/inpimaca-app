@@ -16,3 +16,15 @@
     padding: 1em 3em;
     margin: 0%;
 }
+
+.orange{
+    border-color: #FF511B;
+}
+
+.pink{
+    border-color: #FC005F;
+}
+
+.blue{
+    border-color: #0078D8;
+}

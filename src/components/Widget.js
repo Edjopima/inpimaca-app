@@ -2,13 +2,12 @@ import React from 'react';
 import './Widget.css';
 import WidgetContent from './WidgetContent'
 
-
-const Widget = ()=>{
+const Widget = ({color})=>{
     return(
-        <div className='flex'>
+        <div className={'flex '+ color}>
             <p className='titulo'>Titulo</p>
             <div className='contenido'>
-                <WidgetContent/>
+            <WidgetContent color={color}/>
             </div>
         </div>
     );

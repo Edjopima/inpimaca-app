@@ -1,10 +1,22 @@
 .header{
-    margin: 20px 50px 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
     width: auto;
     text-align: center;
     grid-column: 1/-1;
-    
 }
 h1{
-    color:rgb(22, 45, 70);
+    color:rgb(40, 42, 44);
+    font-weight: bold;
+    margin:0;
+    padding: 0.3rem;
+    font-size: 2.5rem;
+}
+h3{
+    color:rgb(40, 42, 44);
+    font-weight: 300;
+    margin: 0%;
+    font-size: 1.2rem;
 }

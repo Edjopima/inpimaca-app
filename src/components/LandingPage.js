@@ -7,8 +7,8 @@ const LandingPage = () =>{
     return(
         <div className='container'>
         <Header/>
-        <Widget/>
-        <Widget/>
+        <Widget color='blue'/>
+        <Widget color='orange'/>
         </div>
     )
 }

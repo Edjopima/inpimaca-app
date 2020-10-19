@@ -5,14 +5,43 @@
 }
 
 .WidgetContent-item{
-    border-top:1px solid #0074D5;
-    padding: 0.2rem 3rem;
+    display: flex;
+    align-items: center;
+    border-top:1px solid #FF511B;
+    padding-left:3rem;
     color: #3A403D;
 }
 
 .WidgetContent-item-last{
-    border-top:1px solid #0074D5;
-    border-bottom:1px solid #0074D5;
-    padding: 0.2rem 3rem;
+    display: flex;
+    align-items: center;
+    border-top:1px solid #FF511B;
+    border-bottom:1px solid #FF511B;
+    padding-left:3rem;
     color: #3A403D
+}
+.switch{
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+    width: 20px;
+    height: 20px;
+    border: solid 1px;
+    border-radius: 20px;
+}
+
+#checkbox:checked ~.switch{
+    background-color: #FF511B;
+}
+
+.orange{
+    border-color: #FF511B;
+}
+
+.pink{
+    border-color: #FC005F;
+}
+
+.blue{
+    border-color: #0078D8;
 }

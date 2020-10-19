@@ -4,7 +4,7 @@
     height: 100%;
     width: 10rem;
     position: relative;
-    background-color: rgb(21, 32, 43);
+    background-color: rgb(40, 42, 44);
     display: flex;
     flex-flow: column;
     justify-items: flex-start;
@@ -30,14 +30,14 @@
 }
 
 .selected{
-    color:#7eaace;
+    color:#d3658f;
 }
 
 
 .item:hover{
     cursor: pointer;
-    background-color: #7eaace;
-    color:#0074D5 ;
+    background-color: #cc7093;
+    color:#FC005F ;
     border-radius: 5em;
 
 }
