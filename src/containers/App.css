@@ -11,3 +11,11 @@
 .sidebar {
     grid-row:1/-1;
 }
+
+.App-flex{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 700px;
+    padding: 5rem
+}

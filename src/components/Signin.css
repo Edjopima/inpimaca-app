@@ -1,0 +1,55 @@
+.signinForm{
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    width: 500px;
+    padding: 1em;
+}
+
+.logo{
+    width: 7rem;
+    height: 7rem;
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+
+.registro{
+    font-size: 50px;
+}
+.input{
+    font-size: 25px;
+    font-style: italic;
+    border: 0px;
+    border-bottom: 1px solid #707070;
+    color: #707070;
+    padding-bottom: 4px;
+    margin-bottom: 45px;
+    outline: none;
+}
+.boton{
+    align-self: center;
+    height: 40px;
+    width: 150px;
+    background-color: #3a496a;
+    border-radius: 5px;
+    color: #dddddd;
+    border-color: #3a496a;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.boton2{
+    align-self: center;
+    height: 40px;
+    width: 200px;
+    background-color: #3a496a;
+    border-radius: 5px;
+    color: #dddddd;
+    border-color: #3a496a;
+    border-style: none;
+    outline: none;
+}
