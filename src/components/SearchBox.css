@@ -1,0 +1,9 @@
+.Searchbox{
+    margin: 6px;
+    border: solid 1px #0074D5;
+    border-radius: 20px;
+    padding: 2px 10px;
+    width: 20rem;
+    height: 20px;
+    outline: none;
+}

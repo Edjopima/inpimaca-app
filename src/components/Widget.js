@@ -5,7 +5,7 @@ import WidgetContent from './WidgetContent'
 const Widget = ({color})=>{
     return(
         <div className={'flex '+ color}>
-            <p className='titulo'>Titulo</p>
+            <p className='widget-title'>Titulo</p>
             <div className='contenido'>
             <WidgetContent color={color}/>
             </div>

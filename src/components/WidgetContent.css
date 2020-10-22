@@ -20,19 +20,6 @@
     padding-left:3rem;
     color: #3A403D
 }
-.switch{
-    margin: 5px;
-    cursor: pointer;
-    user-select: none;
-    width: 20px;
-    height: 20px;
-    border: solid 1px;
-    border-radius: 20px;
-}
-
-#checkbox:checked ~.switch{
-    background-color: #FF511B;
-}
 
 .orange{
     border-color: #FF511B;

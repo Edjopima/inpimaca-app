@@ -4,8 +4,8 @@ import './Header.css';
 const Header = () =>{
     return(
         <div className='header'>
-            <h1>Bienvenido Eduardo</h1>
-            <h3>Tasa de cambio de dolar: 445.000bs</h3>
+            <h1 className='title'>Bienvenido Eduardo</h1>
+            <h3 className='subtitle' >Tasa de cambio de dolar: 445.000bs</h3>
         </div>
     )
 }
