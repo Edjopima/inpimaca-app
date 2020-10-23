@@ -1,3 +1,13 @@
+:root{
+  --blue:#0074D5;
+  --pink:#FC005F;
+  --pink-text:#ec82aa;
+  --pink-hover:#f5bcd361;
+  --orange:#FF511B;
+  --widget-background:#F5F8FA;
+  --gray:#282a2c;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,14 +25,14 @@ code {
 }
 
 .title{
-  color:rgb(40, 42, 44);
+  color:var(--gray);
   font-weight: bold;
   margin:0;
   padding: 0.3rem;
   font-size: 2.5rem;
 }
 .subtitle{
-  color:rgb(40, 42, 44);
+  color:var(--gray);
   font-weight: 300;
   margin: 0%;
   font-size: 1.2rem;

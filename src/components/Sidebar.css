@@ -4,7 +4,7 @@
     height: 100%;
     width: 10rem;
     position: relative;
-    background-color: rgb(40, 42, 44);
+    background-color: var(--gray);
     display: flex;
     flex-flow: column;
     justify-items: flex-start;
@@ -13,24 +13,25 @@
 }
 
 .item{
-    flex-grow: 1;
     margin:0;
+    margin-top: 0.3rem;
     padding: 1em;
     color: white;
     display: block;
     text-align: start;
     font-size: 1.1em;
+    font-weight: bold;
 }
 
 .selected{
-    color:#d3658f;
+    color:var(--pink-text);
 }
 
 
 .item:hover{
     cursor: pointer;
-    background-color: #cc7093;
-    color:#FC005F ;
+    background-color: var(--pink-hover);
+    color:var(--pink-text);
     border-radius: 5em;
 
 }

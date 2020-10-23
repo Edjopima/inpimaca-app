@@ -1,5 +1,4 @@
 .inventory{
-    border: solid 1px red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,9 +6,9 @@
 }
 
 .table{
-    border: solid 1px #FF511B;
+    border: solid 1px var(--orange);
     border-radius: 50px;
-    background:#F1F1F1;
+    background:var(--widget-background);
     height:34rem;
     overflow: auto;
 }
@@ -17,7 +16,7 @@
 .table-header{
     align-content: center;
     width: 68rem;
-    border-bottom: solid 1px #FF511B;
+    border-bottom: solid 1px var(--orange);
 }
 
 .table-scroll{
