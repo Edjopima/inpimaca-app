@@ -1,21 +1,30 @@
 import React from 'react';
-import Sidebar from '../components/Sidebar'
 import './App.css'
-import Inventory from '../components/Inventory';
-import Signin from '../components/Signin';
+import {Provider} from 'react-redux';
+import {createStore} from 'redux'
+import RouteChange from './RouteChange';
 
-const isSignedin=true;
+const initialState={
+  isSignedin: true,
+  user:{
+    userName:'',
+    email:'',
+    permissions:0
+  },
+  dolar:0
+}
+
+function reducer(state,action){
+  return state
+}
+
+const store = createStore(reducer, initialState);
+
 function App() {
-
   return (
-    isSignedin?
-    <div className="App">
-      <Sidebar isSignedin={isSignedin} className='sidebar'/>
-      <Inventory/>
-    </div>:
-    <div className='App-flex'>
-      <Signin isSignedin={isSignedin}/>
-    </div>
+    <Provider store={store}>
+      <RouteChange/>
+    </Provider>
   );
 }
 
