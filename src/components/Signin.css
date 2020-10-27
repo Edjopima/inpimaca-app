@@ -24,7 +24,7 @@
     border: 0px;
     border-bottom: 1px solid var(--pink);
     color: var(--gray);
-    padding-bottom: 4px;
+    padding-top: 10px;
     margin-bottom: 45px;
     outline: none;
 }
