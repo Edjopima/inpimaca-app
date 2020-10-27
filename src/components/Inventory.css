@@ -15,6 +15,7 @@
 
 .table-header{
     align-content: center;
+    text-align: center;
     width: 68rem;
     border-bottom: solid 1px var(--orange);
 }
@@ -40,30 +41,50 @@ th{
 }
 
 @media screen and (max-width: 480px){
+    .inventory{
+        padding: 0%;
+    }
     .table{
+        border: hidden;
         margin-top: 10px;
-        width: 300px;
-        height: 580px;
+        height: 530px;
     }
     .table-header{
-        width: 300px;
+        width: 400px;
         padding: 6px;
         font-size: .8em;
+        padding: 5px;
+        padding-bottom: 0;
     }
     .table-scroll{
-        width: 300px;
-        height: 560px;
+        width: 400px;
+        height: 480px;
         overflow: auto;
-        font-size: .6em;
+        font-size: .7em;
+        margin-top:10px;
+        margin-bottom: 25px;
     }
 
     .table-content{
-        width: 300px;
-        height: 560px;
+        width: 400px;
+        height: 480px;
+    }
+    .table-item{
+        height: 30px;
+    }
+    .acciones{
+        display: inline-flex;
+        width: 80px;
+        justify-content: center;
+        align-items:center ;
     }
     button{
+        background-color: var(--widget-background);
+        border: hidden;
         height: 10px;
         width: 30px;
-        font-size: .5em;
+        font-size: 1em;
+        color:var(--orange);
+        outline: none;
     }
 }

@@ -12,7 +12,14 @@
     grid-row: 1/-1;
 }
 
-.item{
+.sidebar-logo{
+    padding: 1em;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 80px;
+    align-self: center;
+}
+.sidebar-item{
     margin:0;
     margin-top: 0.3rem;
     padding: 1em;
@@ -38,6 +45,17 @@
 
 @media screen and (max-width: 480px){
     .sidebar{
+        flex-flow: row;
+        width: 100%;
+        height: 60px;
+        justify-content: center;
+    }
+    .sidebar-item{
         display: none;
+    }
+    .sidebar-logo{
+        width: 45px;
+        height: 45px;
+        padding: 8px;
     }
 }

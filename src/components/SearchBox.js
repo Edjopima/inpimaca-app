@@ -11,8 +11,11 @@ const Searchbox = ()=>{
         })
     }
     return(
-        <input onChange={(event)=> search(event)} type='text' placeholder='Buscar' className='Searchbox'></input>
-    )
+        <div className='Searchbox'>
+            <i class="fas fa-search"></i>
+            <input onChange={(event)=> search(event)} type='text' placeholder='Buscar' className='Search'></input>
+        </div>
+          )
 }
 
 export default Searchbox;

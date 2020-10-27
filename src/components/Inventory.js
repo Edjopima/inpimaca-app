@@ -43,10 +43,10 @@ const Inventory = ()=>{
                     <td>
                         <table className='table-header' cellspacing="5"  cellpadding="0">
                             <tr>
-                                <th>Producto</th>
-                                <th>Precio $</th>
-                                <th>Precio Bs.</th>
-                                <th>Acciones</th>
+                                <th className='table-item'>Producto</th>
+                                <th className='table-item'>Precio $</th>
+                                <th className='table-item'>Precio Bs.</th>
+                                <th className='table-item'>Acciones</th>
                             </tr>
                         </table>
                     </td>
@@ -56,13 +56,13 @@ const Inventory = ()=>{
                         <div className='table-scroll'>
                             <table cellspacing="0" cellpadding="0" className='table-content'>
                                 {products.map((product)=>(
-                                    <tr id={product.id}>
+                                    <tr id={product.id} className= 'table-item'>
                                         <td className='table-item'>{product.product}</td>
                                         <td className='table-item'>{product.price}</td>
                                         <td className='table-item'>{roundTo((product.price * dolar),2)}</td>
-                                        <td className='table-item'>
-                                            <button>Edit</button>
-                                            <button>Delete</button>
+                                        <td className='table-item acciones'>
+                                            <button className='edit'><i class="fas fa-pencil-ruler"></i></button>
+                                            <button className='delete'><i class="fas fa-trash"></i></button>
                                         </td>
                                     </tr>
                                     ))}

@@ -12,16 +12,16 @@ const Header = () =>{
     }
     return(
         <div className = 'sidebar'>
-                <img alt='logo' src={logo} className='logo'/>
-                <p className = 'item selected' >Inicio</p>
-                <p className = 'item' >Tareas</p>
-                <p className = 'item' >Inventario</p>
-                <p className = 'item' >Deudores</p>
-                <p className = 'item' >Lotes</p>
-                <p className = 'item' >Proveedores</p>
-                <p className = 'item' >Facturas</p>
-                <p className = 'item' >Perfil</p>
-                <p className = 'item ' onClick={logout}>Cerrar sesion</p>
+                <img alt='sidebar-logo' src={logo} className='sidebar-logo'/>
+                <p className = 'sidebar-item selected' >Inicio</p>
+                <p className = 'sidebar-item' >Tareas</p>
+                <p className = 'sidebar-item' >Inventario</p>
+                <p className = 'sidebar-item' >Deudores</p>
+                <p className = 'sidebar-item' >Lotes</p>
+                <p className = 'sidebar-item' >Proveedores</p>
+                <p className = 'sidebar-item' >Facturas</p>
+                <p className = 'sidebar-item' >Perfil</p>
+                <p className = 'sidebar-item ' onClick={logout}>Cerrar sesion</p>
         </div>
     )
 }

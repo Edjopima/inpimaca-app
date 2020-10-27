@@ -7,8 +7,11 @@
 }
 
 .logo{
+    padding: 1em;
     width: 7rem;
     height: 7rem;
+    border-radius: 80px;
+    align-self: center;
 }
 
 .title{
