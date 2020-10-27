@@ -7,3 +7,9 @@
     height: 20px;
     outline: none;
 }
+
+@media screen and (max-width: 480px){
+    .Searchbox{
+    width: 200px;
+}
+}

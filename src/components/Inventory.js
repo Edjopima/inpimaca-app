@@ -1,13 +1,38 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import './Inventory.css';
 import Searchbox from './SearchBox';
+import {useDispatch,useSelector} from 'react-redux';
+
+const roundTo = (value, places) => {
+    let power = Math.pow(10, places);
+    return Math.round(value * power) / power;
+}
 
 const Inventory = ()=>{
-    const [products,setProducts] = useState([])
+    const dolar = useSelector((state)=> state.dolar);
+    const products= useSelector((state)=>{
+        if (state.productsFiltered.length > 0){
+            return state.productsFiltered
+        } else {
+            return state.products
+        }
+    })
+    const dispatch= useDispatch();
     useEffect(()=>{
         fetch('https://inpimaca-api.herokuapp.com/')
         .then(response => response.json())
-        .then(data => setProducts(data))
+        .then(data => dispatch({
+            type:'SET_PRODUCTS',
+            payload:data}))
+        .catch(err=> console.error(err));
+
+        fetch('https://s3.amazonaws.com/dolartoday/data.json')
+        .then(response=> response.json())
+        .then(data=> dispatch({
+            type:'SET_DOLAR',
+            payload: data.USD.dolartoday
+        }))
+        .catch(err=> console.error(err));
     },[])
     return(
         <div className='inventory'>
@@ -20,7 +45,7 @@ const Inventory = ()=>{
                             <tr>
                                 <th>Producto</th>
                                 <th>Precio $</th>
-                                <th>Categoria</th>
+                                <th>Precio Bs.</th>
                                 <th>Acciones</th>
                             </tr>
                         </table>
@@ -31,10 +56,10 @@ const Inventory = ()=>{
                         <div className='table-scroll'>
                             <table cellspacing="0" cellpadding="0" className='table-content'>
                                 {products.map((product)=>(
-                                    <tr>
+                                    <tr id={product.id}>
                                         <td className='table-item'>{product.product}</td>
                                         <td className='table-item'>{product.price}</td>
-                                        <td className='table-item'>{product.category}</td>
+                                        <td className='table-item'>{roundTo((product.price * dolar),2)}</td>
                                         <td className='table-item'>
                                             <button>Edit</button>
                                             <button>Delete</button>

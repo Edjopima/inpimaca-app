@@ -43,3 +43,30 @@
 .boton:hover{
     background-color: var(--pink-hover);
 }
+
+@media screen and (max-width: 480px){
+    .signinForm{
+        margin-top: 50px;
+        width: 250px;
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .input{
+        font-size: .9em;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+    .boton{
+        margin-top:15px;
+        width: 100px;
+        height: 30px;
+        font-size: .6em;
+        border: solid 1px var(--pink);
+    }
+}

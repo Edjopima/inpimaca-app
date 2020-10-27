@@ -17,3 +17,9 @@
     align-items: center;
     padding: 4rem
 }
+
+@media screen and (max-width: 480px){
+    .App{
+        position:relative;
+    }
+}

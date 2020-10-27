@@ -33,11 +33,10 @@ const Signin= ()=>{
         <div className='signinForm'>
             <img alt='logo' src={logo} className='logo'/>
             <h1 className='title'>Iniciar Sesion</h1>
-            <input onChange={(event)=>setUser(event.target.value)} placeholder="Usuario" type="text" className="input"/>
+            <input onChange={(event)=>setUser(event.target.value.toLowerCase())} placeholder="Usuario" type="text" className="input"/>
             <input onChange={(event)=>setPassword(event.target.value)} placeholder="Contraseña" type="password" className="input"/>
             <button onClick={onButtonSubmit} className='boton'>Iniciar Sesion</button>
         </div>
         )
 }
-
 export default Signin;

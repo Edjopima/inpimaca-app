@@ -12,7 +12,9 @@ const initialState={
     email:'',
     permissions:0
   },
-  dolar:0
+  dolar:0,
+  products:[],
+  productsFiltered:[]
 }
 
 function reducer(state,action){
@@ -27,6 +29,16 @@ function reducer(state,action){
     }
     case 'LOGOUT':{
       return {initialState}
+    }
+    case 'SET_DOLAR':{
+      return {...state, dolar:action.payload}
+    }
+    case 'SET_PRODUCTS':{
+      return {...state,products:action.payload}
+    }
+    case 'FILTER_BY NAME':{
+      let productsByName = state.products.filter(product=> product.product.toLowerCase().includes(action.payload));
+      return {...state,productsFiltered:productsByName}
     }
     default:{
       return state
