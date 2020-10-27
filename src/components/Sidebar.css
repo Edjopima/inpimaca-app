@@ -35,7 +35,7 @@
 }
 
 
-.item:hover{
+.sidebar-item:hover{
     cursor: pointer;
     background-color: var(--pink-hover);
     color:var(--pink-text);
