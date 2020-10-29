@@ -1,6 +1,7 @@
 import React from 'react';
 import './SearchBox.css';
 import {useDispatch} from 'react-redux';
+import AddProduct from './AddProduct';
 
 const Searchbox = ()=>{
     const dispatch = useDispatch();
@@ -14,6 +15,7 @@ const Searchbox = ()=>{
         <div className='Searchbox'>
             <i class="fas fa-search"></i>
             <input onChange={(event)=> search(event)} type='text' placeholder='Buscar' className='Search'></input>
+            <AddProduct/>
         </div>
           )
 }

@@ -14,7 +14,12 @@ const initialState={
   },
   dolar:0,
   products:[],
-  productsFiltered:[]
+  productsFiltered:[],
+  modal:{
+    showModal:false,
+    modalStyle:'edit',
+    editModalElement:null
+  }
 }
 
 function reducer(state,action){
@@ -40,12 +45,14 @@ function reducer(state,action){
       let productsByName = state.products.filter(product=> product.product.toLowerCase().includes(action.payload));
       return {...state,productsFiltered:productsByName}
     }
+    case 'SHOW_MODAL':{
+      return {...state, modal:action.payload}
+    }
     default:{
       return state
     }
   }
 }
-
 const store = createStore(reducer, initialState);
 
 function App() {

@@ -18,20 +18,22 @@ const Inventory = ()=>{
         }
     })
     const dispatch= useDispatch();
+    const editProduct = (product,mode)=>{
+        dispatch({
+            type:'SHOW_MODAL',
+            payload:{
+                showModal:true,
+                modalStyle:mode,
+                editModalElement:product
+            }
+        });
+    }
     useEffect(()=>{
         fetch('https://inpimaca-api.herokuapp.com/')
         .then(response => response.json())
         .then(data => dispatch({
             type:'SET_PRODUCTS',
             payload:data}))
-        .catch(err=> console.error(err));
-
-        fetch('https://s3.amazonaws.com/dolartoday/data.json')
-        .then(response=> response.json())
-        .then(data=> dispatch({
-            type:'SET_DOLAR',
-            payload: data.USD.dolartoday
-        }))
         .catch(err=> console.error(err));
     },[])
     return(
@@ -61,8 +63,8 @@ const Inventory = ()=>{
                                         <td className='table-item'>{product.price}</td>
                                         <td className='table-item'>{roundTo((product.price * dolar),2)}</td>
                                         <td className='table-item acciones'>
-                                            <button className='edit'><i class="fas fa-pencil-ruler"></i></button>
-                                            <button className='delete'><i class="fas fa-trash"></i></button>
+                                            <button className='edit' onClick={()=>editProduct(product,'edit')}><i class="fas fa-pencil-ruler"></i></button>
+                                            <button className='delete' onClick={()=>editProduct(product,'del')}><i class="fas fa-trash"></i></button>
                                         </td>
                                     </tr>
                                     ))}
