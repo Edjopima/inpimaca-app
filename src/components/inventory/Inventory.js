@@ -29,13 +29,13 @@ const Inventory = ()=>{
         });
     }
     useEffect(()=>{
-        fetch('https://inpimaca-api.herokuapp.com/')
+        fetch('https://inpimaca-api.herokuapp.com/inventario')
         .then(response => response.json())
         .then(data => dispatch({
             type:'SET_PRODUCTS',
             payload:data}))
         .catch(err=> console.error(err));
-    },[])
+    })
     return(
         <div className='inventory'>
             <h1 className='title'>Inventario</h1>

@@ -5,7 +5,7 @@ import {createStore} from 'redux'
 import RouteChange from './RouteChange';
 
 const initialState={
-  isSignedin: true,
+  isSignedin: false,
   user:{
     id:0,
     userName:'',
