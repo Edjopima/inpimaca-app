@@ -12,7 +12,7 @@ const initialState={
     email:'',
     permissions:0
   },
-  dolar:0,
+  dolar:540000,
   products:[],
   productsFiltered:[],
   modal:{
@@ -39,11 +39,19 @@ function reducer(state,action){
       return {...state, dolar:action.payload}
     }
     case 'SET_PRODUCTS':{
-      return {...state,products:action.payload}
+      return {...state,products:action.payload,productsFiltered:action.payload}
     }
     case 'FILTER_BY NAME':{
       let productsByName = state.products.filter(product=> product.product.toLowerCase().includes(action.payload));
       return {...state,productsFiltered:productsByName}
+    }
+    case 'FILTER_BY_CATEGORY':{
+      if (action.payload==='T'){
+        return{...state,productsFiltered:state.products}
+      }else{
+        let productsByCategory = state.products.filter(product=> product.category.includes(action.payload));
+        return{...state,productsFiltered:productsByCategory}
+      }
     }
     case 'SHOW_MODAL':{
       return {...state, modal:action.payload}

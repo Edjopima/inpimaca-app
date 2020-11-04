@@ -1,5 +1,15 @@
 .MonitorDolar{
+    margin: -10px;
     text-align: center;
-    font-size: .5em;
+    font-size: 10px;
     color: var(--gray);
+}
+
+@media screen and (max-width: 480px){
+    .MonitorDolar{
+        margin: -10px;
+        text-align: center;
+        font-size: 7px;
+        color: var(--gray);
+    }
 }

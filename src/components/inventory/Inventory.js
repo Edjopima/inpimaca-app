@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import './Inventory.css';
 import Searchbox from './SearchBox';
+import DolarMonitor from '../DolarMonitor'
+import FilterByCategory from './FilterByCategory'
 import {useDispatch,useSelector} from 'react-redux';
 
 const roundTo = (value, places) => {
@@ -10,13 +12,7 @@ const roundTo = (value, places) => {
 
 const Inventory = ()=>{
     const dolar = useSelector((state)=> state.dolar);
-    const products= useSelector((state)=>{
-        if (state.productsFiltered.length > 0){
-            return state.productsFiltered
-        } else {
-            return state.products
-        }
-    })
+    const products= useSelector((state)=>state.productsFiltered)
     const dispatch= useDispatch();
     const editProduct = (product,mode)=>{
         dispatch({
@@ -35,11 +31,13 @@ const Inventory = ()=>{
             type:'SET_PRODUCTS',
             payload:data}))
         .catch(err=> console.error(err));
-    })
+    },[])
     return(
         <div className='inventory'>
             <h1 className='title'>Inventario</h1>
+            <DolarMonitor/>
             <Searchbox/>
+            <FilterByCategory/>
             <table cellspacing="0" cellpadding="0"  className='table'>
                 <tr>
                     <td>

@@ -2,21 +2,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1em;
+    margin-left: 10rem;
 }
-
+.title{
+    padding-top: 10px;
+    margin: 0;
+}
 .table{
     border: solid 1px var(--orange);
     border-radius: 50px;
     background:var(--widget-background);
     height:34rem;
+    width: 68rem;
     overflow: auto;
 }
 
 .table-header{
     align-content: center;
     text-align: center;
-    width: 68rem;
+    width: 65rem;
     border-bottom: solid 1px var(--orange);
 }
 
@@ -27,7 +32,7 @@
 }
 
 .table-content{
-    width: 68rem;
+    width: 67rem;
     height: 30rem;
 }
 
@@ -39,18 +44,29 @@ th{
     width: 24rem;
     text-align: center;
 }
+button{
+    background-color: var(--widget-background);
+    border: hidden;
+    height: 10px;
+    width: 50px;
+    font-size: 1em;
+    color:var(--orange);
+    outline: none;
+}
 
 @media screen and (max-width: 480px){
     .inventory{
         padding: 0%;
+        margin-left: 0;
     }
     .table{
         border: hidden;
         margin-top: 10px;
-        height: 530px;
+        height: 100%;
+        width: 100%;
     }
     .table-header{
-        width: 400px;
+        width: 420px;
         padding: 6px;
         font-size: .8em;
         padding: 5px;
@@ -58,7 +74,7 @@ th{
     }
     .table-scroll{
         width: 400px;
-        height: 480px;
+        height: 470px;
         overflow: auto;
         font-size: .7em;
         margin-top:10px;
@@ -67,7 +83,7 @@ th{
 
     .table-content{
         width: 400px;
-        height: 480px;
+        height: 100%;
     }
     .table-item{
         height: 30px;

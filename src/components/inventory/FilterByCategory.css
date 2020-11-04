@@ -1,0 +1,25 @@
+.Filter{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 24rem;
+    font-size: 0.9em;
+    height: 30px;
+}
+.Filter-item{
+    margin: 0;
+    padding: 4px 4px;
+}
+
+.Filter-item:hover{
+    cursor: pointer;
+    background-color: var(--orange-hover);
+    border-radius: 40px;
+    color: var(--orange);
+}
+
+.Filter-selected{
+    color: var(--orange);
+    border-bottom: solid 1px var(--orange);
+}

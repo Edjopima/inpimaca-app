@@ -9,10 +9,16 @@ const MonitorDolar = ()=> {
     useEffect(()=>{
         fetch('https://s3.amazonaws.com/dolartoday/data.json')
         .then(response=> response.json())
-        .then(data=> dispatch({
-            type:'SET_DOLAR',
-            payload: data.USD.dolartoday
-        }))
+        .then(data=> dispatch(
+            (data>dolar)?
+            {
+                type:'SET_DOLAR',
+                payload: data.USD.dolartoday
+            }:{
+                type:'SET_DOLAR',
+                payload:dolar
+            }
+        ))
         .catch(err=> console.error(err));
     },[])
     return(

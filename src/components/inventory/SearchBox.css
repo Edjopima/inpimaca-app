@@ -7,19 +7,27 @@
     height: 20px;
     background-color: var(--widget-background);
     display: inline-flex;
-    justify-content: center;
     align-items: center;
     color: var(--blue);
 }
+
+.fa-search{
+    padding: 8px;
+}
+
 .Search{
     background-color: var(--widget-background);
     border: hidden;
     outline: none;
     padding-left: 8px;
+    width: 16rem;
 }
 
 @media screen and (max-width: 480px){
     .Searchbox{
     width: 220px;
 }
+    .Search{
+        width: 160px;
+    }
 }

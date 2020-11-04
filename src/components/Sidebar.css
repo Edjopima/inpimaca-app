@@ -1,19 +1,18 @@
 .sidebar{
+    position: fixed;
     padding: 0;
+    padding-top: 10px;
+    top: 0px;
     margin: 0;
     height: 100%;
-    width: 10rem;
-    position: relative;
     background-color: var(--gray);
     display: flex;
     flex-flow: column;
-    justify-items: flex-start;
-    align-items: flex-start;
-    grid-row: 1/-1;
+    z-index: 0;
 }
 
 .sidebar-logo{
-    padding: 1em;
+    padding: 8px;
     width: 6rem;
     height: 6rem;
     border-radius: 80px;
@@ -49,6 +48,7 @@
         width: 100%;
         height: 60px;
         justify-content: center;
+        position: relative;
     }
     .sidebar-item{
         display: none;
