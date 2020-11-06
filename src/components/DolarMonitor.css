@@ -3,6 +3,11 @@
     text-align: center;
     font-size: 10px;
     color: var(--gray);
+    padding: 10px 0;
+}
+
+.MonitorDolar h1{
+    margin: 0%;
 }
 
 @media screen and (max-width: 480px){
