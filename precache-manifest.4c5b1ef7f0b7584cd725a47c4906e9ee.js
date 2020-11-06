@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e4b32f4afde39b8dac70b5cd6da01c1f",
+    "revision": "dccf602b480d7ee61e23bb7a5741f6a2",
     "url": "/inpimaca-app/index.html"
   },
   {
-    "revision": "680c45d6887ca77c5ea4",
-    "url": "/inpimaca-app/static/css/main.6580bd00.chunk.css"
+    "revision": "543bde3abc5854be3e13",
+    "url": "/inpimaca-app/static/css/main.27821828.chunk.css"
   },
   {
-    "revision": "f5fd703452648eb2f768",
-    "url": "/inpimaca-app/static/js/2.710abb33.chunk.js"
+    "revision": "d7d3c6718e1399299748",
+    "url": "/inpimaca-app/static/js/2.8f8ba6d1.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/inpimaca-app/static/js/2.710abb33.chunk.js.LICENSE.txt"
+    "url": "/inpimaca-app/static/js/2.8f8ba6d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "680c45d6887ca77c5ea4",
-    "url": "/inpimaca-app/static/js/main.8a0ec268.chunk.js"
+    "revision": "543bde3abc5854be3e13",
+    "url": "/inpimaca-app/static/js/main.2afa2f17.chunk.js"
   },
   {
     "revision": "d0660fb0f25209cf9e54",

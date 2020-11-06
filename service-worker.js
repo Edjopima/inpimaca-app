@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/inpimaca-app/precache-manifest.b02ab619e3c06725adff80de9464c91c.js"
+  "/inpimaca-app/precache-manifest.4c5b1ef7f0b7584cd725a47c4906e9ee.js"
 );
 
 self.addEventListener('message', (event) => {
