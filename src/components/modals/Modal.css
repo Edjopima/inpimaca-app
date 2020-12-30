@@ -20,7 +20,7 @@
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 300px;
+    width: 400px;
 }
 
 .Modal-title{
@@ -69,5 +69,11 @@
 .boton{
     color: var(--orange);
     border-color: var(--orange);
+}
+
+@media screen and (max-width: 480px){
+    .Modal{
+        width:300px;
+    }
 }
 
